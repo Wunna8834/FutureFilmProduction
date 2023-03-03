@@ -1,0 +1,8 @@
+.movie-page-bg {
+    background-image: url("../images/moviebg.png");
+    background-size: cover;
+}
+
+.title-color {
+    color: #F2921D;
+}

@@ -1,0 +1,19 @@
+.about-us-bg {
+    background-image: url("../images/cyberpunkpg.png");
+    background-size: cover;
+    
+}
+.header-color {
+    color: #F2921D;
+    font-weight: 500;
+}
+.neon-text {
+    color: #F9F54B;
+}
+
+.normal-service {
+    background-color: #00edeb;
+}
+.popular-service {
+    background-color: #fcf000;
+}

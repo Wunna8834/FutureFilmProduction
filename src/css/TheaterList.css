@@ -1,0 +1,9 @@
+.seat-banner {
+    background-image: url(../images/theaterseat.webp);
+    background-size: cover;
+    height: 100vh;
+}
+
+.seat-header {
+    color: #F2921D;
+}

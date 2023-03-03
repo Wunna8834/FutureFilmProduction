@@ -1,0 +1,9 @@
+.account-page-bg {
+    background-image: url('../images/cybercat.png');
+    background-size: cover;
+    height: 100vh;
+}
+
+.text-color {
+    color: #F2921D;
+}

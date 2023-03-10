@@ -6,7 +6,7 @@ export const TheaterList = () => {
   return (
     <div className='seat-banner p-5'>
         <h2 className='text-center seat-header'>Find your nearest theater location</h2>
-        <div className='d-flex justify-content-center align-items-center gap-3 mt-4'>
+        <div className='d-flex flex-lg-row flex-column justify-content-center align-items-center gap-3 mt-4'>
             {theater_list.map(list => 
                 <div key={list.id}>
                     <TheaterCard 

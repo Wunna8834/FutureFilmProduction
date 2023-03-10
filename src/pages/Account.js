@@ -12,7 +12,7 @@ export const Account = () => {
   return (
     <div className='account-page-bg pt-4'>
             <h3 className='text-center text-color'>Create Account</h3>
-            <Form className='col-6 mx-auto' onSubmit={handleSubmit}>
+            <Form className='col-lg-6 col-10 mx-auto' onSubmit={handleSubmit}>
                 <Form.Group>
                     <Form.Label className='text-light'>User Name</Form.Label>
                     <Form.Control type='text' placeholder='Enter your username'/>

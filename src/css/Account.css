@@ -2,6 +2,7 @@
     background-image: url('../images/cybercat.png');
     background-size: cover;
     height: 100vh;
+    background-position: center;
 }
 
 .text-color {

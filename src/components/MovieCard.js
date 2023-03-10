@@ -3,7 +3,7 @@ import { Badge, Button, Card } from 'react-bootstrap'
 import { LinkContainer } from 'react-router-bootstrap'
 export const MovieCard = (props) => {
   return (
-    <Card className='col-11'>
+    <Card className='col-11 mt-2 mt-lg-0'>
         <Card.Img variant='top' src={props.imgSrc}/>
         <Card.Body>
             <Card.Title>

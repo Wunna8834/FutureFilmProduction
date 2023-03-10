@@ -1,6 +1,7 @@
 .movie-page-bg {
     background-image: url("../images/moviebg.png");
     background-size: cover;
+    background-position: center;
 }
 
 .title-color {

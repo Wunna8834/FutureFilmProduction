@@ -7,7 +7,7 @@ export const ContactUs = () => {
   return (
     <div className='col-12 contact-us-bg'>
         <div className='d-flex text-light flex-column justify-content-center align-items-center py-4'>
-            <h2>Reach us from the following</h2>
+            <h2 style={{color:"#F2921D"}}>Reach us from the following</h2>
             <div>
                 <p>Office Phone:<span>  01-123456</span></p>
                 <p>Address:<span>Office 32, Junction Mawtin</span></p>
@@ -20,8 +20,8 @@ export const ContactUs = () => {
             <img src={GoogleMap}/>
         </div>
         <div className='mt-3'>
-            <h2 className='text-center text-light'>Frequently Asked Questions</h2>
-            <Accordion className='col-6 mx-auto'>
+            <h2 className='text-center' style={{color:"#F2921D"}}>Frequently Asked Questions</h2>
+            <Accordion className='col-lg-6 col-sm-12 mx-auto'>
                 {accordion_data.map(item =>
                     <Accordion.Item key={item.id} eventKey={item.id}>
                         <Accordion.Header>{item.question}</Accordion.Header>
@@ -31,8 +31,8 @@ export const ContactUs = () => {
             </Accordion>
         </div>
         <div className='mt-4'>
-            <h2 className='text-center text-light'>Get in touch with us</h2>
-            <Form className='col-6 mx-auto'>
+            <h2 className='text-center' style={{color:"#F2921D"}}>Get in touch with us</h2>
+            <Form className='col-lg-6 col-sm-12 mx-auto'>
                 <Form.Group>
                     <Form.Label className='text-light'>Name</Form.Label>
                     <Form.Control type='text' placeholder='Enter your name'/>

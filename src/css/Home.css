@@ -2,6 +2,7 @@
     background-image: url(../images/cinemahalledit.jpg);
     background-size: cover;
     filter: brightness(90%);
+    background-position: center;
 }
 
 .banner-header {

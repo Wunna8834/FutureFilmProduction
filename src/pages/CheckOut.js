@@ -4,8 +4,8 @@ import { Card } from 'react-bootstrap'
 export const CheckOut = () => {
   return (
     <div>
-        <h2 className='text-center'>Take your movie ticket here</h2>
-        <Card className="col-4 mx-auto mb-3">
+        <h2 className='text-center fs-2' style={{color:"#F2921D"}}>Take your movie ticket here</h2>
+        <Card className="col-lg-4 col-10 mx-auto mb-3 mt-2">
             <Card.Img src={QR_Code} variant="top"/>
             <Card.Body>
                 <Card.Title className='text-center fs-3'>A girl with a beautiful skirt</Card.Title>

@@ -21,7 +21,7 @@ export const Home = () => {
         <div className='banner'>
             <div className='px-4 pt-5 pb-2'>
                 <h2 className={headerClass}>Experience the magic of cinema with <br/><span className='banner-header-highlight'>Future Film</span></h2>
-                <p className={textClass}>Reserve your favorite films. Enjoy the ultimate movie-going experience without any hassles. You can find the perfect showtime that fits your schedule with a large selection of movies and theaters. Prepare to sit back, relax, and take in the show. Purchase your tickets right away.</p>
+                <p className="col-sm-12 col-lg-6 text-light">Reserve your favorite films. Enjoy the ultimate movie-going experience without any hassles. You can find the perfect showtime that fits your schedule with a large selection of movies and theaters. Prepare to sit back, relax, and take in the show. Purchase your tickets right away.</p>
                 <LinkContainer to="/movie-list">
                     <Button variant="success" size='lg'>Book Now</Button>
                 </LinkContainer>
@@ -30,7 +30,7 @@ export const Home = () => {
         {/*Latest movie section */}
         <div className='latest-movie animate__animated animate__pulse'>
             <h2 className='text-center banner-header'>Latest Movie Information</h2>
-            <div className='d-flex ps-4 col-12'>
+            <div className='d-flex flex-lg-row flex-column ps-4 col-12'>
                 {latest_movie.filter(movie => movie.category === "latest").map(movie => 
                     <div className='mt-3' key={movie.id}>
                         <MovieCard className="card" 

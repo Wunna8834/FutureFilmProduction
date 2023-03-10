@@ -11,11 +11,11 @@ export const AboutUs = () => {
     <div className='about-us-bg'>
         {/* Information Section*/}
         <h3 className='text-center fs-2 header-color fw-bold'>About Us</h3>
-        <div className='d-flex justify-content-center align-items-center gap-4 mt-2 animate__animated animate__tada animate__bounceInDown'>
-            <div className='col-3'>
+        <div className='d-flex flex-lg-row flex-column justify-content-center align-items-center gap-4 mt-2 animate__animated animate__tada animate__bounceInDown'>
+            <div className='col-lg-3 col-sm-12'>
                 <img className='col-12' src={Logo}/>
             </div>
-            <div className='col-7 text-light' style={{textAlign: "justify"}}>
+            <div className='col-lg-7 col-sm-12 text-light' style={{textAlign: "justify"}}>
                 <p>
                     Company Name: Future Film Production <br/>
                     Location: Yangon, Myanmar <br/>

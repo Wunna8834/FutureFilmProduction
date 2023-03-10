@@ -38,14 +38,14 @@ export const Booking = () => {
   }
   const [modal, setModal] = useState(false)
   return (
-    <div style={{backgroundColor: "#F5EAEA"}} className='d-flex justify-content-around px-2'>
-        <div className='col-6'>
+    <div style={{backgroundColor: "#F5EAEA"}} className='d-flex flex-column flex-lg-row justify-content-around px-2'>
+        <div className='col-lg-6 col-12'>
           <img className='col-12' src={image_photo}/>
         </div>
-        <div className='col-5 mb-3'>
+        <div className='col-lg-5 col-12 mb-3'>
           <h3>{movie_name}</h3>
-          <p className='col-10 text-mute' style={{textAlign: "justify"}}>{movie_description}</p>
-          <p>Theater Name: {theater_name}</p>
+          <p className='col-lg-10 col-12 text-mute' style={{textAlign: "justify"}}>{movie_description}</p>
+          <p className='fw-semibold'>Theater Name: {theater_name}</p>
           <Form>
             <Form.Group>
               <Form.Label>Seating Plan</Form.Label>

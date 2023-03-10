@@ -26,12 +26,16 @@ export const Booking = () => {
     const dateString = dateObj.toISOString()
     setShowDate(dateString.substr(0,10))
   }
-  console.log(showDate)
+  
   const [number, setNumber] = useState("")
   const setSelectedNumber = (event) => {
     setNumber(event.target.value)
   }
 
+  const [payment, setPayment] = useState("")
+  const setSelectedPayment = (event) => {
+    setPayment(event.target.value);
+  }
   const [modal, setModal] = useState(false)
   return (
     <div style={{backgroundColor: "#F5EAEA"}} className='d-flex justify-content-around px-2'>
@@ -59,6 +63,15 @@ export const Booking = () => {
                 <option value="9AM-12PM">9AM - 12PM</option>
                 <option value="1PM-3PM">1PM - 3PM</option>
                 <option value="4PM-6PM">4PM - 6PM</option>
+              </Form.Select>
+            </Form.Group>
+            <Form.Group>
+              <Form.Label>Payment Method</Form.Label>
+              <Form.Select onChange={setSelectedPayment}>
+                <option>Select Payment Method</option>
+                <option value="KBZ Pay">KBZ Pay</option>
+                <option value="AYA Bank">AYA Bank</option>
+                <option value="Wave Pay">Wave Pay</option>
               </Form.Select>
             </Form.Group>
             <Form.Group>

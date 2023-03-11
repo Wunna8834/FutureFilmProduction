@@ -30,7 +30,7 @@ export const Home = () => {
         {/*Latest movie section */}
         <div className='latest-movie animate__animated animate__pulse'>
             <h2 className='text-center banner-header'>Latest Movie Information</h2>
-            <div className='d-flex flex-lg-row flex-column ps-4 col-12'>
+            <div className='d-flex flex-lg-row flex-md-row flex-column col-12'>
                 {latest_movie.filter(movie => movie.category === "latest").map(movie => 
                     <div className='mt-3' key={movie.id}>
                         <MovieCard className="card" 

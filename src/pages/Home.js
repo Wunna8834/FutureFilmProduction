@@ -33,15 +33,17 @@ export const Home = () => {
             <div className='d-flex flex-lg-row flex-md-row flex-column col-12'>
                 {latest_movie.filter(movie => movie.category === "latest").map(movie => 
                     <div className='mt-3' key={movie.id}>
-                        <MovieCard className="card" 
-                            imgSrc={movie.moviePhoto}
-                            title={movie.movieName}
-                            duration={movie.movieDuration}
-                            rating={movie.movieRating}
-                            theaterName={movie.theaterName}
-                            description={movie.description}
-                            id={movie.id}
-                        />
+
+                            <MovieCard className="card" 
+                                imgSrc={movie.moviePhoto}
+                                title={movie.movieName}
+                                duration={movie.movieDuration}
+                                rating={movie.movieRating}
+                                theaterName={movie.theaterName}
+                                description={movie.description}
+                                id={movie.id}
+                            />
+        
                     
                     </div>    
                 )}

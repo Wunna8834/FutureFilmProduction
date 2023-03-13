@@ -4,7 +4,9 @@ import { LinkContainer } from 'react-router-bootstrap'
 export const MovieCard = (props) => {
   return (
     <Card className='col-lg-11 col-md-12 col-12 mt-2 mt-lg-0'>
-        <Card.Img variant='top' src={props.imgSrc}/>
+        <LinkContainer style={{cursor: "pointer"}} to={`/booking/${props.id}`}>
+            <Card.Img variant='top' src={props.imgSrc}/>
+        </LinkContainer>
         <Card.Body>
             <Card.Title>
                 {props.title}
